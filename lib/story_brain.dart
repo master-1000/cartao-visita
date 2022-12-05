@@ -2,8 +2,6 @@ import 'package:projeto_n1/story.dart';
 
 class StoryBrain {
 
-  // A lista foi adicionada na classe StoryBrain, antes estava em outro arquivo.
-
   final List<Story> _storyData = [
     Story(
         'Seu carro estourou um pneu numa estrada sinuosa, no meio do nada, sem sinal de celular. Você decidiu procurar carona. Você ouve o barulho de uma caminhonete velha para próxima de você. Um homem com um chapelão e olhos assombrosos abre a porta do carona para você e pergunta: "Precisa de uma carona, garoto?".',
@@ -49,7 +47,7 @@ class StoryBrain {
     return _storyData[storyNumb].choice2;
   }
 
-  bool isChoice2Available(){ // Alterado
+  bool isChoice2Available(){ 
     if (storyNumb < 3) {
       return true;
     } else {
@@ -57,7 +55,7 @@ class StoryBrain {
     }
   }
 
-  void nextStory(int param){ //Alterado
+  void nextStory(int param){ 
     if (storyNumb == 0) {
       storyNumb = param == 1 ? 2 : 1;
     } else if (storyNumb == 1) {
