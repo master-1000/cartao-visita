@@ -18,7 +18,7 @@ class StoryPage extends StatefulWidget {
 
 class _StoryPageState extends State<StoryPage> {
 
-  StoryBrain storyBrain = StoryBrain(); //Alterado
+  StoryBrain storyBrain = StoryBrain(); 
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +52,7 @@ class _StoryPageState extends State<StoryPage> {
                 child: TextButton(
                   onPressed: () {
                     setState(() {
-                      storyBrain.nextStory(1); //Alterado -> usuário escolhe opção 1
+                      storyBrain.nextStory(1); 
                     });
                   },
                   style: TextButton.styleFrom(
@@ -77,7 +77,7 @@ class _StoryPageState extends State<StoryPage> {
                   child: TextButton(
                     onPressed: () {
                       setState(() {
-                        storyBrain.nextStory(2);  //Alterado -> usuário escolhe opção 2
+                        storyBrain.nextStory(2);  
                       });
                     },
                     style: TextButton.styleFrom(
